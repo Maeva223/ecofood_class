@@ -1,9 +1,13 @@
+import { Card } from 'react-bootstrap';
+
 export function ProductCard({ title, image, description }) {
     return (
-        <div style={{ border: '1px solid #ccc', padding: '10px', margin: '10px' }}>
-            <img src={image} alt={title} width={150} />
-            <h3>{title}</h3>
-            <p>{description}</p>
-        </div>
+        <Card className="h-100">
+            <Card.Img variant="top" src={image} alt={title} style={{ height: '200px', objectFit: 'cover' }} />
+            <Card.Body>
+                <Card.Title>{title}</Card.Title>
+                <Card.Text>{description}</Card.Text>
+            </Card.Body>
+        </Card>
     );
 }
