@@ -65,16 +65,14 @@ function App() {
         </section>
 
         {/* Registration Section */}
-        <section className="py-5">
+        <section className="py-4 bg-white border-top border-bottom">
           <Container>
-            <Row className="justify-content-center">
-              <Col md={6} lg={4}>
-                <div className="card shadow">
-                  <div className="card-body">
-                    <h3 className="card-title text-center mb-4">Registro de Usuario</h3>
-                    <Formulario />
-                  </div>
-                </div>
+            <Row className="align-items-center">
+              <Col md={3}>
+                <h4 className="mb-md-0 text-md-start text-center">Registro de Usuario</h4>
+              </Col>
+              <Col md={9}>
+                <Formulario />
               </Col>
             </Row>
           </Container>
